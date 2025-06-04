@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'VT323', monospace;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #main-site {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        spline-viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -2;
+        }
+
+        #about {
+            position: relative;
+            z-index: 2; 
+            color: white;
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            pointer-events: none;
+            margin-top: 40vh;
+            font-size: 24px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 50px;
+        }
+
+        #about * {
+            pointer-events: auto; 
+        }
+
+        
+        .back-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            z-index: 3;
+        }
+
+
+    
+        .connect-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+            position: relative;
+            z-index: 3;
+        }
+
+
+     
+        .connect-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #bc13fe; 
+            background-color: transparent;
+            border: 2px solid #bc13fe; 
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        .connect-button:hover {
+            background-color: #bc13fe; 
+            color: black; 
+            box-shadow: 0 0 10px #bc13fe, 0 0 40px #bc13fe, 0 0 80px #bc13fe; 
+        }
+    </style>
+</head>
+<body>
+    <div id="main-site">
+      
+        <spline-viewer 
+            url="https://prod.spline.design/gFT4M5JUFTlLoWFk/scene.splinecode" 
+            style="width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 1; pointer-events: auto;">
+        </spline-viewer>
+
+
+   
+        <a href="../index.html" onclick="sessionStorage.setItem('skipAnimation', 'true');" class="back-home">Back to Home</a>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a problem solver, a tech enthusiast, and a creator. Whether it's coding sleek web applications or exploring new technologies, 
+                I love turning ideas into reality.
+            </p>
+            <p>
+                I specialize in Full Stack Development, working with JavaScript (React, Node.js), Python, and UI/UX design to build engaging digital experiences.
+            </p>
+            <p>
+                Beyond coding, I love diving into AI, experimenting with creative design, and occasionally getting lost in a good sci-fi movie.
+            </p>
+        </section>
+
+      
+        <div class="connect-container">
+            <p>I'm always open to collaborations, exciting projects, or just tech talk.</p>
+            <a href="contact.html" class="connect-button">Let's Connect!</a>
+        </div>
+    </div>
+ 
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.63/build/spline-viewer.js"></script>
+</body>
+</html>
