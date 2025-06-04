@@ -3,7 +3,7 @@
 
 This is a personal portfolio website that features a unique, interactive terminal-like loading experience before transitioning to a visually engaging main site with a 3D background and a quadrant-based navigation system.
 
-##Project Link: [[https://wasif-exe.netlify.app/]](https://wasif-exe.netlify.app/)
+## Project Link: [[https://wasif-exe.netlify.app/]](https://wasif-exe.netlify.app/)
 
 ## Features
 
@@ -24,7 +24,7 @@ This is a personal portfolio website that features a unique, interactive termina
 
 ## Project Structure
 
-
+```
 .
 ├── index.html
 ├── css/
@@ -39,7 +39,7 @@ This is a personal portfolio website that features a unique, interactive termina
     ├── contact.html
     ├── projects.html
     └── skills.html
-
+```
 
 * `index.html`: The main entry point of the website, featuring the terminal loader and the main site layout.
 * `css/styles.css`: Global styles for the main portfolio sections.
